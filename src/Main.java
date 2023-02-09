@@ -97,8 +97,10 @@ public class Main {
         System.out.println(daysForLosingWeightFirstDiet);
         float daysForLosingWeightSecondDiet = loseWeightTotal / dailyLosingWeightSecondDietKg;
         System.out.println(daysForLosingWeightSecondDiet);
-        float daysForLosingWeightAverage = (daysForLosingWeightFirstDiet + daysForLosingWeightSecondDiet) / 2;
-        System.out.println(daysForLosingWeightAverage);
+        float dailyLoseWeightAverage = (dailyLosingWeightSecondDietKg + dailyLosingWeightFirstDietKg) / 2;
+        float daysForLosingWeightAverage = loseWeightTotal / dailyLoseWeightAverage;
+        System.out.printf("%.2f", daysForLosingWeightAverage);
+        System.out.println();
     }
     public static void task8() {
         float mashaCurrentSalary = 67760f;
