@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
     public static void task1() {
         byte orangesContainersQuantity = 127;
@@ -26,4 +27,14 @@ public class Main {
         int f = 27897;
         byte g = 67;
     }
+    public static void task3() {
+        byte studentsQtyLudmilaClass = 23;
+        byte studentsQtyAnnaClass = 28;
+        byte studentsQtyEkaterinaClass = 30;
+        int studentsQtyTotal = studentsQtyLudmilaClass + studentsQtyAnnaClass + studentsQtyEkaterinaClass;
+        float totalSheetsQty = 480f;
+        float oneStudentSheetsQty = totalSheetsQty / studentsQtyTotal;
+        System.out.println("На каждого ученика рассчитано " + oneStudentSheetsQty + " листов бумаги.");
+    }
+
 }
