@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
     public static void task1() {
         byte orangesContainersQuantity = 127;
@@ -73,7 +74,7 @@ public class Main {
         int totalBananaWeight = bananaQty * oneBananaWeightGram;
         short milkVolumeMl = 200;
         short milkWeighGramIn100Ml = 105;
-        int totalMilkWeight =  (milkVolumeMl /100) * milkWeighGramIn100Ml;
+        int totalMilkWeight =  (milkVolumeMl / 100) * milkWeighGramIn100Ml;
         byte iceCreamQty = 2;
         byte oneIceCreamWeightGram = 100;
         int totalIceCreamWeightGram = iceCreamQty * oneIceCreamWeightGram;
@@ -82,7 +83,20 @@ public class Main {
         int totalEggWeightGram = eggsQty * oneEggWeightGram;
         float breakfastWeightsGram = totalBananaWeight + totalMilkWeight + totalIceCreamWeightGram + totalEggWeightGram;
         System.out.println(breakfastWeightsGram);
-        float breakfastWeightsKg = breakfastWeightsGram /1000;
+        float breakfastWeightsKg = breakfastWeightsGram / 1000;
         System.out.println(breakfastWeightsKg);
+    }
+    public static void task7() {
+        int loseWeightTotal = 7;
+        float dailyLosingWeightFirstDietGram = 250f;
+        float dailyLosingWeightFirstDietKg = dailyLosingWeightFirstDietGram / 1000;
+        float dailyLosingWeightSecondDietGram = 500f;
+        float dailyLosingWeightSecondDietKg = dailyLosingWeightSecondDietGram / 1000;
+        float daysForLosingWeightFirstDiet = loseWeightTotal / dailyLosingWeightFirstDietKg;
+        System.out.println(daysForLosingWeightFirstDiet);
+        float daysForLosingWeightSecondDiet = loseWeightTotal / dailyLosingWeightSecondDietKg;
+        System.out.println(daysForLosingWeightSecondDiet);
+        float daysForLosingWeightAverage = (daysForLosingWeightFirstDiet + daysForLosingWeightSecondDiet) / 2;
+        System.out.println(daysForLosingWeightAverage);
     }
 }
