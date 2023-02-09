@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
     public static void task1() {
         byte orangesContainersQuantity = 127;
@@ -47,16 +48,16 @@ public class Main {
         int productionTimeMinutes = 1;
         productionTimeMinutes = productionTimeMinutes * 20;
         int productionCapacityForMinutes = productionTimeMinutes * productionCapacityPerMinute;
-        System.out.println("За " + productionTimeMinutes + " мин. машина произвела " + productionCapacityForMinutes + " шт. бутылок");
+        System.out.println("За " + productionTimeMinutes + " мин. машина произвела " + productionCapacityForMinutes + " шт. бутылок.");
         int productionTimeDays = 1;
         int productionCapacityForDays = productionTimeDays * 24 * 60 * productionCapacityPerMinute;
-        System.out.println("За " + productionTimeDays + " дн. машина произвела " + productionCapacityForDays + " шт. бутылок");
+        System.out.println("За " + productionTimeDays + " дн. машина произвела " + productionCapacityForDays + " шт. бутылок.");
         productionTimeDays = productionTimeDays * 3;
         productionCapacityForDays = productionTimeDays * 24 * 60 * productionCapacityPerMinute;
-        System.out.println("За " + productionTimeDays + " дн. машина произвела " + productionCapacityForDays + " шт. бутылок");
+        System.out.println("За " + productionTimeDays + " дн. машина произвела " + productionCapacityForDays + " шт. бутылок.");
         int productionTimeMonths = 1;
         int productionCapacityForMonth = productionTimeMonths * 30 * 24 * 60 * productionCapacityPerMinute;
-        System.out.println("За " + productionTimeMonths + " мес. машина произвела " + productionCapacityForMonth + " шт. бутылок");
+        System.out.println("За " + productionTimeMonths + " мес. машина произвела " + productionCapacityForMonth + " шт. бутылок.");
     }
     public static void task5() {
         int totalPaintQtyPerSchool = 120;
@@ -66,7 +67,7 @@ public class Main {
         int classesQtyInSchool = totalPaintQtyPerSchool / totalPaintQtyPerClass;
         int whitePaintQtyPerSchool = whitePaintQtyPerClass * classesQtyInSchool;
         int brownPaintQtyPerSchool = brownPaintQtyPerClass * classesQtyInSchool;
-        System.out.println("В школе, где " + classesQtyInSchool + " классов, нужно " + whitePaintQtyPerSchool + " банок белой краски и " + brownPaintQtyPerSchool + " банок коричневой краски");
+        System.out.println("В школе, где " + classesQtyInSchool + " классов, нужно " + whitePaintQtyPerSchool + " банок белой краски и " + brownPaintQtyPerSchool + " банок коричневой краски.");
     }
     public static void task6() {
         byte bananaQty = 5;
@@ -98,5 +99,25 @@ public class Main {
         System.out.println(daysForLosingWeightSecondDiet);
         float daysForLosingWeightAverage = (daysForLosingWeightFirstDiet + daysForLosingWeightSecondDiet) / 2;
         System.out.println(daysForLosingWeightAverage);
+    }
+    public static void task8() {
+        float mashaCurrentSalary = 67760f;
+        float denisCurrentSalary = 83690f;
+        float kristinaCurrentSalary = 76230f;
+        float mashaCurrentAnnualSalary = mashaCurrentSalary * 12;
+        float denisCurrentAnnualSalary = denisCurrentSalary * 12;
+        float kristinaCurrentAnnualSalary = kristinaCurrentSalary * 12;
+        float mashaNewSalary = (float) (mashaCurrentSalary * 1.1);
+        float denisNewSalary = (float) (denisCurrentSalary * 1.1);
+        float kristinaNewSalary = (float) (kristinaCurrentSalary * 1.1);
+        float mashaNewAnnualSalary = mashaNewSalary * 12;
+        float denisNewAnnualSalary = denisNewSalary * 12;
+        float kristinaNewAnnualSalary = kristinaNewSalary * 12;
+        float mashaAnnualSalaryIncreasing = mashaNewAnnualSalary - mashaCurrentAnnualSalary;
+        float denisAnnualSalaryIncreasing = denisNewAnnualSalary - denisCurrentAnnualSalary;
+        float kristinaAnnualSalaryIncreasing = kristinaNewAnnualSalary - kristinaCurrentAnnualSalary;
+        System.out.println("Маша теперь получает " + mashaNewSalary + " рублей. Годовой доход вырос на " + mashaAnnualSalaryIncreasing + " рублей.");
+        System.out.println("Денис теперь получает " + denisNewSalary + " рублей. Годовой доход вырос на " + denisAnnualSalaryIncreasing + " рублей.");
+        System.out.println("Кристина теперь получает " + kristinaNewSalary + " рублей. Годовой доход вырос на " + kristinaAnnualSalaryIncreasing + " рублей.");
     }
 }
