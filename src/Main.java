@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
     public static void task1() {
         byte orangesContainersQuantity = 127;
@@ -54,5 +55,15 @@ public class Main {
         int productionTimeMonths = 1;
         int productionCapacityForMonth = productionTimeMonths * 30 * 24 * 60 * productionCapacityPerMinute;
         System.out.println("За " + productionTimeMonths + " мес. машина произвела " + productionCapacityForMonth + " шт. бутылок");
+    }
+    public static void task5() {
+        int totalPaintQtyPerSchool = 120;
+        int whitePaintQtyPerClass = 2;
+        int brownPaintQtyPerClass = 4;
+        int totalPaintQtyPerClass = whitePaintQtyPerClass + brownPaintQtyPerClass;
+        int classesQtyInSchool = totalPaintQtyPerSchool / totalPaintQtyPerClass;
+        int whitePaintQtyPerSchool = whitePaintQtyPerClass * classesQtyInSchool;
+        int brownPaintQtyPerSchool = brownPaintQtyPerClass * classesQtyInSchool;
+        System.out.println("В школе, где " + classesQtyInSchool + " классов, нужно " + whitePaintQtyPerSchool + " банок белой краски и " + brownPaintQtyPerSchool + " банок коричневой краски");
     }
 }
