@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
     public static void task1() {
         byte orangesContainersQuantity = 127;
@@ -36,5 +37,22 @@ public class Main {
         float oneStudentSheetsQty = totalSheetsQty / studentsQtyTotal;
         System.out.println("На каждого ученика рассчитано " + oneStudentSheetsQty + " листов бумаги.");
     }
-
+    public static void task4() {
+        byte productionCapacityQtyInitial = 16;
+        byte productionTimeMinutesInitial = 2;
+        int productionCapacityPerMinute = productionCapacityQtyInitial / productionTimeMinutesInitial;
+        int productionTimeMinutes = 1;
+        productionTimeMinutes = productionTimeMinutes * 20;
+        int productionCapacityForMinutes = productionTimeMinutes * productionCapacityPerMinute;
+        System.out.println("За " + productionTimeMinutes + " мин. машина произвела " + productionCapacityForMinutes + " шт. бутылок");
+        int productionTimeDays = 1;
+        int productionCapacityForDays = productionTimeDays * 24 * 60 * productionCapacityPerMinute;
+        System.out.println("За " + productionTimeDays + " дн. машина произвела " + productionCapacityForDays + " шт. бутылок");
+        productionTimeDays = productionTimeDays * 3;
+        productionCapacityForDays = productionTimeDays * 24 * 60 * productionCapacityPerMinute;
+        System.out.println("За " + productionTimeDays + " дн. машина произвела " + productionCapacityForDays + " шт. бутылок");
+        int productionTimeMonths = 1;
+        int productionCapacityForMonth = productionTimeMonths * 30 * 24 * 60 * productionCapacityPerMinute;
+        System.out.println("За " + productionTimeMonths + " мес. машина произвела " + productionCapacityForMonth + " шт. бутылок");
+    }
 }
