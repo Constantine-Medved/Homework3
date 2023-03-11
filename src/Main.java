@@ -10,6 +10,7 @@ public class Main {
         task8();
     }
     public static void task1() {
+        System.out.println("Задача 1.");
         byte orangesContainersQuantity = 127;
         System.out.println("Значение переменной orangesContainersQuantity с типом byte равно " + orangesContainersQuantity);
         short orangesPalletsQuantity = 32767;
@@ -24,6 +25,7 @@ public class Main {
         System.out.println("Значение переменной juiceInOneContainer с типом double равно " + juiceInOneContainer);
     }
     public static void task2() {
+        System.out.println("Задача 2.");
         float a = 27.12f;
         long b = 987678965549L;
         double c = 2.786;
@@ -33,6 +35,7 @@ public class Main {
         byte g = 67;
     }
     public static void task3() {
+        System.out.println("Задача 3.");
         byte studentsQtyLudmilaClass = 23;
         byte studentsQtyAnnaClass = 28;
         byte studentsQtyEkaterinaClass = 30;
@@ -42,6 +45,7 @@ public class Main {
         System.out.println("На каждого ученика рассчитано " + oneStudentSheetsQty + " листов бумаги.");
     }
     public static void task4() {
+        System.out.println("Задача 4.");
         byte productionCapacityQtyInitial = 16;
         byte productionTimeMinutesInitial = 2;
         int productionCapacityPerMinute = productionCapacityQtyInitial / productionTimeMinutesInitial;
@@ -60,6 +64,7 @@ public class Main {
         System.out.println("За " + productionTimeMonths + " мес. машина произвела " + productionCapacityForMonth + " шт. бутылок.");
     }
     public static void task5() {
+        System.out.println("Задача 5.");
         int totalPaintQtyPerSchool = 120;
         int whitePaintQtyPerClass = 2;
         int brownPaintQtyPerClass = 4;
@@ -70,6 +75,7 @@ public class Main {
         System.out.println("В школе, где " + classesQtyInSchool + " классов, нужно " + whitePaintQtyPerSchool + " банок белой краски и " + brownPaintQtyPerSchool + " банок коричневой краски.");
     }
     public static void task6() {
+        System.out.println("Задача 6.");
         byte bananaQty = 5;
         byte oneBananaWeightGram = 80;
         int totalBananaWeight = bananaQty * oneBananaWeightGram;
@@ -88,6 +94,7 @@ public class Main {
         System.out.println(breakfastWeightsKg);
     }
     public static void task7() {
+        System.out.println("Задача 7.");
         int loseWeightTotal = 7;
         float dailyLosingWeightFirstDietGram = 250f;
         float dailyLosingWeightFirstDietKg = dailyLosingWeightFirstDietGram / 1000;
@@ -103,6 +110,7 @@ public class Main {
         System.out.println();
     }
     public static void task8() {
+        System.out.println("Задача 8.");
         float mashaCurrentSalary = 67760f;
         float denisCurrentSalary = 83690f;
         float kristinaCurrentSalary = 76230f;
